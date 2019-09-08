@@ -80,6 +80,14 @@ SocksListenAddress 192.168.1.1
 In this example it listens on 192.168.1.1
 Currently Tor doesn't support IPv6 addresses for listening.
 
+# Linux Build
+```bash
+$ cd $source-dir-root
+$ mkdir build 
+$ cd build ; cmake .. ; make
+$ make install
+```
+
 Please note that Tor/Vidalia will output warnings that your application
 doesn't resolve host names via Tor. This is not true, but Tor can't know
 this as Tor doesn't recognize the tunneled DNS requests. DNS2SOCKS
